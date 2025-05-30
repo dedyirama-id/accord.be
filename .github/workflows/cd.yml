@@ -49,6 +49,9 @@ jobs:
       
       - name: Migrate database
         run: npm run migrate up
+
+      - name: Make publish.sh executable
+        run: chmod +x ./scripts/publish.sh
       
       - name: Build and release
         run: npm run release
